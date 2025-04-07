@@ -6,7 +6,7 @@
 
 {% block content %}
 
-  {% if perms.products.views_product and perms.inflow.view_inflow %}
+  {% if perms.products.view_product and perms.inflow.view_inflow %}
     {% include 'components/_product_metrics.html' %}
   {% endif %}
 

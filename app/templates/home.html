@@ -6,11 +6,11 @@ SGE-Home
 
 {% block content %}
 
-  {% if perms.products.views_product and perms.inflow.view_inflow %}
+  {% if perms.products.view_product and perms.inflow.view_inflow %}
     {% include 'components/_product_metrics.html' %}
   {% endif %}
 
-  {% if perms.outflows.views_outflow %}
+  {% if perms.outflows.view_outflow %}
     {% include 'components/_sales_metrics.html' %}
   {% endif %}
 

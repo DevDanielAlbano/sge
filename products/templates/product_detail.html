@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 
+{% block title %}
+SGE - Detalhes do Produto
+{% endblock %}
+
 {% block content %}
 
 <div class="container mt-4">
@@ -11,11 +15,9 @@
             <p class="card-text">Marca: {{ object.brand }}</p>
             <p class="card-text">Fornecedor: {{ object.supplier }}</p>
             <p class="card-text">Categoria: {{ object.category }}</p>
-            <p class="card-text">SubCategoria: {{ object.subcategory }}</p>
             <p class="card-text">{{ object.description }}</p>
             <p class="card-text">Preço de Custo: {{ object.cost_price }}</p>
             <p class="card-text">Preço de venda: {{ object.selling_price }}</p>
-            <p class="card-text">Tamanho: {{ object.size }}</p>
         </div>
     </div>
     <a href="{% url 'product_list' %}" class="btn btn-secondary mt-3">Cancelar e Voltar</a>

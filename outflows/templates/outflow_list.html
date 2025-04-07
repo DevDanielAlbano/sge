@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 
 {% block title%}
-ANCHOR - Saídas
+SGE - Saídas
 {% endblock %}
 
 {% block content %}
 
-    {% if perms.outflows.views_outflow %}
+    {% if perms.outflows.view_outflow %}
         {% include 'components/_sales_metrics.html' %}
     {% endif %}
 
